@@ -6,7 +6,6 @@ public class ZooTest {
 
     @Test
     void testLionCageRestrictions() throws CageFullException {
-        // Створюємо вольєр для левів на 2 місця
         LionCage lionCage = new LionCage(2);
         Lion simba = new Lion("Simba");
         Lion nala = new Lion("Nala");
