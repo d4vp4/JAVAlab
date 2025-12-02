@@ -1,0 +1,43 @@
+2025-12-02 12:24:22 [main] INFO  - Application started.
+2025-12-02 12:24:32 [main] INFO  - Language changed to: uk_UA
+2025-12-02 12:24:44 [main] INFO  - Language changed to: en_US
+2025-12-02 12:24:49 [main] ERROR - Input error
+java.lang.NumberFormatException: For input string: "12 21"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:565) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:662) ~[?:?]
+	at lab10_2.calculate(lab10_2.java:46) [JAVA/:?]
+	at lab10_2.main(lab10_2.java:24) [JAVA/:?]
+2025-12-02 13:00:41 [main] INFO  - Application started.
+2025-12-02 13:00:48 [main] ERROR - Input error
+java.lang.NumberFormatException: For input string: "12 21"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:565) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:662) ~[?:?]
+	at lab10_2.calculate(lab10_2.java:47) [JAVA/:?]
+	at lab10_2.main(lab10_2.java:25) [JAVA/:?]
+2025-12-02 13:00:57 [main] INFO  - Calculation: 1 + 1 = 2
+2025-12-02 13:01:02 [main] INFO  - Language changed to: uk_UA
+2025-12-02 13:01:51 [main] INFO  - Application started.
+2025-12-02 13:01:57 [main] INFO  - Language changed to: uk_UA
+2025-12-02 13:12:08 [main] INFO  - Application started.
+2025-12-02 13:12:17 [main] INFO  - Language changed to: uk_UA
+2025-12-02 13:13:31 [main] INFO  - Application started.
+2025-12-02 13:13:38 [main] INFO  - Language changed to: uk_UA
+2025-12-02 13:13:45 [main] INFO  - Calculation: 2 + 88 = 90
+2025-12-02 13:14:36 [main] INFO  - Calculation: 8 + 987877878 = 987877886
+2025-12-02 13:17:33 [main] ERROR - Input error
+java.lang.NumberFormatException: For input string: "л"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:565) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:662) ~[?:?]
+	at lab10_2.calculate(lab10_2.java:71) [JAVA/:?]
+	at lab10_2.main(lab10_2.java:33) [JAVA/:?]
+2025-12-02 13:17:46 [main] INFO  - Language changed to: en_US
+2025-12-02 13:17:57 [main] INFO  - Calculation: 44 + 88 = 132
+2025-12-02 14:00:14 [main] INFO  - Application started.
+2025-12-02 14:00:31 [main] INFO  - Calculation: 10 + 32 = 42
+2025-12-02 14:00:37 [main] INFO  - Application started.
+2025-12-02 14:00:48 [main] INFO  - Calculation: 12 + 40 = 52
+2025-12-02 14:00:54 [main] INFO  - Language changed to: uk_UA
+2025-12-02 14:01:01 [main] INFO  - Calculation: 213 + 21324 = 21537

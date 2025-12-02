@@ -51,7 +51,7 @@ public class lab9_2 {
         RingBuffer buffer1 = new RingBuffer(10);
         RingBuffer buffer2 = new RingBuffer(10);
 
-        // --- 1. П'ять потоків-генераторів ---
+        // П'ять потоків-генераторів
         for (int i = 1; i <= 5; i++) {
             int threadNum = i;
             Thread generator = new Thread(() -> {
@@ -61,11 +61,11 @@ public class lab9_2 {
                     try { Thread.sleep(50); } catch (InterruptedException e) {}
                 }
             });
-            generator.setDaemon(true); // Робимо демоном
+            generator.setDaemon(true);
             generator.start();
         }
 
-        // --- 2. Два потоки-перекладачі ---
+        //  Два потоки-перекладачі
         for (int i = 1; i <= 2; i++) {
             int threadNum = i;
             Thread transferor = new Thread(() -> {
@@ -75,17 +75,17 @@ public class lab9_2 {
                     buffer2.put(newMsg);
                 }
             });
-            transferor.setDaemon(true); // Робимо демоном
+            transferor.setDaemon(true);
             transferor.start();
         }
 
-        // --- 3. Основний потік читає 100 повідомлень ---
+        // Основний потік читає 100 повідомлень
         System.out.println("--- Початок читання ---");
         for (int i = 0; i < 100; i++) {
             String finalMsg = buffer2.take();
             System.out.println((i + 1) + ". " + finalMsg);
         }
         System.out.println("--- Прочитано 100 повідомлень. Кінець програми ---");
-        // Оскільки інші потоки - демони, програма завершиться тут автоматично
+
     }
 }
